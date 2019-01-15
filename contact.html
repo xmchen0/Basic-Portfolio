@@ -8,41 +8,49 @@
 
 <body>
 
-    <header class="header">
+    <div class="header">
+        <h1 style="float:left">Kathy Chen</h1>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a class="active" href="contact.html">Contact</a>
-    </header>
-
-    <div class="name">
-        <p>Kathy Chen</p>
     </div>
+
+    <hr class="line1"><br>
+
+    <div id="background-container">
         
-    <div class="container">
-        <h1>Contact</h1>
+        <div class="container">
+            <h2>Contact</h2>
 
-        <hr class="line">
+            <hr class="line2"><br>
 
-        <section id="contact">
+            <section id="contact">
 
-        <p><em>Let's stay in touch.</em></p>
+            <p><em>Let's stay in touch. Fill in your details below:</em></p>
 
-        <p>Name</p>
+            <form class="textName">
+                Name<br>
+                <input class="textField1" type="text" name="name" placeholder="John Smith">
+                <br><br>
+                Email<br>
+                <input class="textField2" type="text" name="email" placeholder="example@gmail.com">
+                <br><br>
+                Message<br>
+                <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+                <br><br>
+                <input type="button" class="button" value="Submit">
+            </form> 
 
-        <p>Email</p>
+            </section>
 
-        <p>Message</p>
-
-        </section>
-
+        </div>
     </div>
-
 
 <body>
 
-<hr class="line2">
+<hr class="line3">
 <footer class="footer">
-    Kathy Chen 2019 ©<br>
+    <br>Kathy Chen 2019 ©
 </footer>
 
 </html>
