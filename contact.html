@@ -1,4 +1,4 @@
-<! DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,53 +8,57 @@
 
 <body>
 
-    <span id="name-box">Kathy Chen</span>
+    <h1 id="name-box">Kathy Chen</h1>
 
         <nav class="header">
             <a style= "border-right:1px solid #ebebeb;" href="index.html">About</a>
             <a style= "border-right:1px solid #ebebeb;" href="portfolio.html">Portfolio</a> 
             <a class="active" href="contact.html">Contact</a>
         </nav>
-    
-    <hr class="line1"><br>
         
     <div id="background-image"></div>
         
         <div class="container-contact">
+
             <h2>Contact</h2>
 
             <hr class="line2"><br>
 
-            <section id="contact">
+            <p><strong>Let's stay in touch.</strong></p>
 
-            <div><em>Let's stay in touch. Fill in your details below:</em></div>
-
-            <br><br>
-
+            <p>Fill in your details below:</p>
 
             <form class="textName">
-                Name<br>
-                <input class="textField1" type="text" name="name" placeholder="John Smith">
+                
+                <div>
+                    <label>Name *</label>
+                    <input class="textField1" type="text" name="name" placeholder="John Smith" required>
+                </div>
+
+                <div>
+                    <label>Email *</label>
+                    <input class="textField2" type="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div>
+                    <label>Message *</label>
+                    <textarea name="textArea" id="textArea" cols="30" rows="10" required></textarea>
+                </div>
+
                 <br><br>
-                Email<br>
-                <input class="textField2" type="text" name="email" placeholder="example@gmail.com">
-                <br><br>
-                Message<br>
-                <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
-                <br><br>
-                <input type="button" class="button" value="Submit">
+
+                <div>
+                    <input type="submit" class="button" value="Submit">
+                </div>
             </form> 
 
-            </section>
-
         </div>
-    </div>
-
-<body>
 
 <hr class="line3">
 <footer class="footer">
-    <div id="copyright">Kathy Chen 2019 ©</div>
+    <div id="copyright">Xiao Mei (Kathy) Chen 2019 ©</div>
 </footer>
+
+</body>
 
 </html>
