@@ -1,10 +1,24 @@
 body {
-    padding: 30px;
-    margin: 100px;
+    padding: 20px;
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 100px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 200%;
+    overflow-x: hidden;
   }
+
+#background-image {
+    background-image: url("gravel.png");
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 93px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
 
 h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -15,29 +29,49 @@ h2 {
     color: #4aaaa5;
   }
 
-.container {
+.container-index {
     width: 960px;
     height: 750px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     padding: 40px;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 100px;
     color: #777777
   }
 
-#background-container {
-    background-color: #ebebeb;
-    margin: -70px -500%;
-    padding: 0 500% !important;
-    overflow: hidden;
-}
+.container-portfolio {
+    width: 960px;
+    height: 900px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 40px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    color: #777777;
+    position: relative;
+  }
+
+.container-contact {
+    width: 960px;
+    height: 800px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 40px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    color: #777777
+  }
 
 .line1 {
-    border: 1px solid #dddddd;
-    margin: 0 -500%;
-    padding: 0 500% !important;
-} 
-
+    border: 0.5px solid #dddddd;
+    left: 0;
+    top: 90px;
+    width: 10000%;
+}
 
 .line2 {
     border: 1px solid #dddddd;
@@ -70,12 +104,18 @@ h2 {
     font-size: 12px;
   }
 
+#copyright {
+    padding: 15px;
+    margin-bottom: 7px;
+}
+
 .header {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
     background: #ffffff;
     color: #777777;
-    margin-top: 0 auto;
+    margin-top: 15px;
+    margin-right: 180px;
     overflow: hidden;
     float: right;
   }
@@ -85,29 +125,24 @@ a {
     padding: 10px;
     color: #777777;
 }
-
-.header a {
-    border-right: 1px solid #ebebeb;
-}
-
-header {
-    background: #4aaaa5;
-  }
   
-h1 {
+#name-box {
     float: left;
     padding: 20px;
-    margin: 0;
-    margin-bottom: 20px;
+    box-sizing: 10px;
+    width: 15%;
+    margin-bottom: 0px;
+    margin-left: 70px;;
     font-size: 28px;
     color: #ffffff;
     text-align: center;
     background: #4aaaa5;
+    font-weight: bold;
     font-family: 'Georgia', Times, Times New Roman, serif;
   }
   
 .main-bio {
-    padding: 16px;
+    padding: 15px;
   }
   
 .sticky {
@@ -117,7 +152,7 @@ h1 {
   }
   
 .sticky + .main-bio {
-    padding-top: 102px;
+    padding-top: 100px;
   }
 
 .header a:hover {
@@ -131,8 +166,28 @@ h1 {
   }
 
 #portfolio {
-    box-sizing: border-box;
+    clear: both;
 }
+
+h4 {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 5px;
+    padding: 5px;
+    width: 390px;
+}
+
+.portfolio-image {
+    width: 50%;
+    height: 24%;
+    float: left;
+    position: relative; 
+}
+
 
 .textField1,
 .textField2 { 
@@ -150,6 +205,7 @@ h1 {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
     color: #494343;
+    border-color: #bdb8b8;
 }
 
 .textName {
